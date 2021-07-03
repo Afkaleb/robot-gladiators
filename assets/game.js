@@ -140,9 +140,11 @@ console.log(playerInfo.name, playerInfo.attack, playerInfo.health);
 
 var startGame = function() {
   for (var i = 0; i < enemyInfo.length; i++) {
-    // reset player stats
-   playerInfo.reset();
- 
+    startGame = function() {
+     // reset player stats
+     playerInfo.reset();
+    }
+
     if (playerInfo.health > 0) {
 
      // let player know what round they are in, remember that arrays start at 0 so it needs to have 1 added to it
